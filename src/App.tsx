@@ -1,19 +1,16 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import './App.css'
-import FirstPage from './components/FirstPage'
-import SecondPage from './components/SecondPage'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import "./App.css";
+import FirstPage from "./components/FirstPage";
+import SecondPage from "./components/SecondPage";
 
 function App() {
-
     return (
-        <>
-            <BrowserRouter>
-                <Routes>
-                    <Route path="/" Component={FirstPage}/>
-                    <Route path="second" Component={SecondPage}/>
-                </Routes>
-            </BrowserRouter>
-        </>
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" Component={FirstPage}/>
+                <Route path="second" Component={SecondPage}/>
+            </Routes>
+        </BrowserRouter>
     )
 }
 

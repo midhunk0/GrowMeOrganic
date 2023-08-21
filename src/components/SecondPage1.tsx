@@ -8,8 +8,6 @@ interface Character {
     dateOfBirth: string;
     wand: {
         core: string;
-        wood: string;
-        length: number;
     };
     gender: string;
     eyeColour: string;
@@ -31,7 +29,8 @@ const SecondPage1: React.FC = () => {
                 const result = await response.json();
                 setData(result);
                 console.log(result);
-            } catch (error) {
+            } 
+            catch (error) {
                 console.error(error);
             }
         }
